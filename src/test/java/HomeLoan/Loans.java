@@ -10,6 +10,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -36,6 +38,7 @@ public class Loans {
 	static Robot KeyBoard;
 	static Select DropDowns;
 	static WebDriverWait Waits;
+	static EdgeOptions options;
 	
 	@DataProvider(name = "Softcodeing")  
 		public Object [][] method1 () {
@@ -45,15 +48,15 @@ public class Loans {
 	public Object[][] method2 () {
 		return new Object[][] {{9787857768l,"Dhamodharan"}};
 	}
-@Parameters({"dhamu"})
+
 @BeforeClass (groups = "smoke")
-public void launcher(String weblauncher) {
-	option = new ChromeOptions();
-	option.addArguments("start-maximized");
-	option.addArguments("disable-notification");
-	option.addArguments("disable-popups");
-	driver = new ChromeDriver(option);
-	driver.get(weblauncher);
+public void launcher() {
+		option = new ChromeOptions();
+		option.addArguments("start-maximized");
+		option.addArguments("disable-notification");
+		option.addArguments("disable-popups");
+		driver = new ChromeDriver(option);
+	driver.get("https://www.axisbank.com/");
 	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 }
 @BeforeMethod(groups = "smoke")

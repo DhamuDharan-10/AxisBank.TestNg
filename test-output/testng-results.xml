@@ -1,48 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-14T21:43:59 IST" name="Suite" finished-at="2025-03-14T21:44:19 IST" duration-ms="20249">
+  <suite started-at="2025-03-16T17:08:34 IST" name="Suite" finished-at="2025-03-16T17:09:07 IST" duration-ms="32975">
     <groups>
       <group name="regression">
-        <method signature="Loans.windows_handle()[pri:3, instance:HomeLoan.Loans@59402b8f]" name="windows_handle" class="HomeLoan.Loans"/>
-        <method signature="Loans.Details(long,java.lang.String)[pri:4, instance:HomeLoan.Loans@59402b8f]" name="Details" class="HomeLoan.Loans"/>
+        <method signature="Loans.windows_handle()[pri:3, instance:HomeLoan.Loans@6b695b06]" name="windows_handle" class="HomeLoan.Loans"/>
+        <method signature="Loans.Details(long,java.lang.String)[pri:4, instance:HomeLoan.Loans@6b695b06]" name="Details" class="HomeLoan.Loans"/>
       </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="PersonalLoan.ClickAction()[pri:1, instance:HomeLoan.PersonalLoan@4007f65e]" name="ClickAction" class="HomeLoan.PersonalLoan"/>
+      </group> <!-- smoke -->
       <group name="sanity">
-        <method signature="Loans.dashBoard()[pri:1, instance:HomeLoan.Loans@59402b8f]" name="dashBoard" class="HomeLoan.Loans"/>
-        <method signature="Loans.AmountFixer(int)[pri:2, instance:HomeLoan.Loans@59402b8f]" name="AmountFixer" class="HomeLoan.Loans"/>
+        <method signature="Loans.dashBoard()[pri:1, instance:HomeLoan.Loans@6b695b06]" name="dashBoard" class="HomeLoan.Loans"/>
+        <method signature="Loans.AmountFixer(int)[pri:2, instance:HomeLoan.Loans@6b695b06]" name="AmountFixer" class="HomeLoan.Loans"/>
       </group> <!-- sanity -->
     </groups>
-    <test started-at="2025-03-14T21:43:59 IST" name="Test" finished-at="2025-03-14T21:44:19 IST" duration-ms="20249">
+    <test started-at="2025-03-16T17:08:34 IST" name="Test" finished-at="2025-03-16T17:09:07 IST" duration-ms="32975">
+      <class name="HomeLoan.PersonalLoan">
+        <test-method is-config="true" signature="laucher()[pri:0, instance:HomeLoan.PersonalLoan@4007f65e]" started-at="2025-03-16T17:08:56 IST" name="laucher" finished-at="2025-03-16T17:09:02 IST" duration-ms="5487" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- laucher -->
+        <test-method is-config="true" signature="Starts_on()[pri:0, instance:HomeLoan.PersonalLoan@4007f65e]" started-at="2025-03-16T17:09:02 IST" name="Starts_on" finished-at="2025-03-16T17:09:02 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Starts_on -->
+        <test-method signature="ClickAction()[pri:1, instance:HomeLoan.PersonalLoan@4007f65e]" started-at="2025-03-16T17:09:02 IST" name="ClickAction" finished-at="2025-03-16T17:09:03 IST" duration-ms="1526" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickAction -->
+        <test-method is-config="true" signature="Ends_on()[pri:0, instance:HomeLoan.PersonalLoan@4007f65e]" started-at="2025-03-16T17:09:03 IST" name="Ends_on" finished-at="2025-03-16T17:09:03 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Ends_on -->
+        <test-method is-config="true" signature="closure()[pri:0, instance:HomeLoan.PersonalLoan@4007f65e]" started-at="2025-03-16T17:09:03 IST" name="closure" finished-at="2025-03-16T17:09:07 IST" duration-ms="3284" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closure -->
+      </class> <!-- HomeLoan.PersonalLoan -->
       <class name="HomeLoan.Loans">
-        <test-method is-config="true" signature="launcher(java.lang.String)[pri:0, instance:HomeLoan.Loans@59402b8f]" started-at="2025-03-14T21:43:59 IST" name="launcher" finished-at="2025-03-14T21:44:05 IST" duration-ms="5891" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[https://www.axisbank.com/]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="launcher()[pri:0, instance:HomeLoan.Loans@6b695b06]" started-at="2025-03-16T17:08:34 IST" name="launcher" finished-at="2025-03-16T17:08:41 IST" duration-ms="6877" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launcher -->
-        <test-method is-config="true" signature="starts_on()[pri:0, instance:HomeLoan.Loans@59402b8f]" started-at="2025-03-14T21:44:05 IST" name="starts_on" finished-at="2025-03-14T21:44:05 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="starts_on()[pri:0, instance:HomeLoan.Loans@6b695b06]" started-at="2025-03-16T17:08:41 IST" name="starts_on" finished-at="2025-03-16T17:08:41 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- starts_on -->
-        <test-method signature="dashBoard()[pri:1, instance:HomeLoan.Loans@59402b8f]" started-at="2025-03-14T21:44:05 IST" name="dashBoard" finished-at="2025-03-14T21:44:06 IST" duration-ms="1079" status="PASS">
+        <test-method signature="dashBoard()[pri:1, instance:HomeLoan.Loans@6b695b06]" started-at="2025-03-16T17:08:41 IST" name="dashBoard" finished-at="2025-03-16T17:08:43 IST" duration-ms="1907" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dashBoard -->
-        <test-method is-config="true" signature="ends_on()[pri:0, instance:HomeLoan.Loans@59402b8f]" started-at="2025-03-14T21:44:06 IST" name="ends_on" finished-at="2025-03-14T21:44:06 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="ends_on()[pri:0, instance:HomeLoan.Loans@6b695b06]" started-at="2025-03-16T17:08:43 IST" name="ends_on" finished-at="2025-03-16T17:08:43 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ends_on -->
-        <test-method is-config="true" signature="starts_on()[pri:0, instance:HomeLoan.Loans@59402b8f]" started-at="2025-03-14T21:44:06 IST" name="starts_on" finished-at="2025-03-14T21:44:06 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- starts_on -->
-        <test-method signature="AmountFixer(int)[pri:2, instance:HomeLoan.Loans@59402b8f]" started-at="2025-03-14T21:44:06 IST" name="AmountFixer" data-provider="Softcodeing" finished-at="2025-03-14T21:44:07 IST" duration-ms="889" status="PASS">
+        <test-method signature="AmountFixer(int)[pri:2, instance:HomeLoan.Loans@6b695b06]" started-at="2025-03-16T17:08:43 IST" name="AmountFixer" data-provider="Softcodeing" finished-at="2025-03-16T17:08:43 IST" duration-ms="817" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -53,15 +67,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AmountFixer -->
-        <test-method is-config="true" signature="ends_on()[pri:0, instance:HomeLoan.Loans@59402b8f]" started-at="2025-03-14T21:44:07 IST" name="ends_on" finished-at="2025-03-14T21:44:07 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ends_on -->
-        <test-method is-config="true" signature="starts_on()[pri:0, instance:HomeLoan.Loans@59402b8f]" started-at="2025-03-14T21:44:07 IST" name="starts_on" finished-at="2025-03-14T21:44:07 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="starts_on()[pri:0, instance:HomeLoan.Loans@6b695b06]" started-at="2025-03-16T17:08:43 IST" name="starts_on" finished-at="2025-03-16T17:08:43 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- starts_on -->
-        <test-method signature="AmountFixer(int)[pri:2, instance:HomeLoan.Loans@59402b8f]" started-at="2025-03-14T21:44:07 IST" name="AmountFixer" data-provider="Softcodeing" finished-at="2025-03-14T21:44:12 IST" duration-ms="5640" status="PASS">
+        <test-method is-config="true" signature="ends_on()[pri:0, instance:HomeLoan.Loans@6b695b06]" started-at="2025-03-16T17:08:43 IST" name="ends_on" finished-at="2025-03-16T17:08:43 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ends_on -->
+        <test-method signature="AmountFixer(int)[pri:2, instance:HomeLoan.Loans@6b695b06]" started-at="2025-03-16T17:08:43 IST" name="AmountFixer" data-provider="Softcodeing" finished-at="2025-03-16T17:08:49 IST" duration-ms="5554" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -72,23 +86,27 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AmountFixer -->
-        <test-method is-config="true" signature="ends_on()[pri:0, instance:HomeLoan.Loans@59402b8f]" started-at="2025-03-14T21:44:12 IST" name="ends_on" finished-at="2025-03-14T21:44:12 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ends_on -->
-        <test-method is-config="true" signature="starts_on()[pri:0, instance:HomeLoan.Loans@59402b8f]" started-at="2025-03-14T21:44:12 IST" name="starts_on" finished-at="2025-03-14T21:44:12 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="starts_on()[pri:0, instance:HomeLoan.Loans@6b695b06]" started-at="2025-03-16T17:08:43 IST" name="starts_on" finished-at="2025-03-16T17:08:43 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- starts_on -->
-        <test-method signature="windows_handle()[pri:3, instance:HomeLoan.Loans@59402b8f]" started-at="2025-03-14T21:44:12 IST" name="windows_handle" finished-at="2025-03-14T21:44:13 IST" duration-ms="398" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- windows_handle -->
-        <test-method is-config="true" signature="ends_on()[pri:0, instance:HomeLoan.Loans@59402b8f]" started-at="2025-03-14T21:44:13 IST" name="ends_on" finished-at="2025-03-14T21:44:13 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="ends_on()[pri:0, instance:HomeLoan.Loans@6b695b06]" started-at="2025-03-16T17:08:49 IST" name="ends_on" finished-at="2025-03-16T17:08:49 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ends_on -->
-        <test-method signature="Details(long,java.lang.String)[pri:4, instance:HomeLoan.Loans@59402b8f]" started-at="2025-03-14T21:44:13 IST" name="Details" data-provider="SoftcodeingOne" finished-at="2025-03-14T21:44:13 IST" duration-ms="830" status="PASS">
+        <test-method signature="windows_handle()[pri:3, instance:HomeLoan.Loans@6b695b06]" started-at="2025-03-16T17:08:49 IST" name="windows_handle" finished-at="2025-03-16T17:08:50 IST" duration-ms="1198" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- windows_handle -->
+        <test-method is-config="true" signature="starts_on()[pri:0, instance:HomeLoan.Loans@6b695b06]" started-at="2025-03-16T17:08:49 IST" name="starts_on" finished-at="2025-03-16T17:08:49 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- starts_on -->
+        <test-method is-config="true" signature="ends_on()[pri:0, instance:HomeLoan.Loans@6b695b06]" started-at="2025-03-16T17:08:50 IST" name="ends_on" finished-at="2025-03-16T17:08:50 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ends_on -->
+        <test-method signature="Details(long,java.lang.String)[pri:4, instance:HomeLoan.Loans@6b695b06]" started-at="2025-03-16T17:08:50 IST" name="Details" data-provider="SoftcodeingOne" finished-at="2025-03-16T17:08:51 IST" duration-ms="783" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -104,15 +122,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Details -->
-        <test-method is-config="true" signature="starts_on()[pri:0, instance:HomeLoan.Loans@59402b8f]" started-at="2025-03-14T21:44:13 IST" name="starts_on" finished-at="2025-03-14T21:44:13 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="starts_on()[pri:0, instance:HomeLoan.Loans@6b695b06]" started-at="2025-03-16T17:08:50 IST" name="starts_on" finished-at="2025-03-16T17:08:50 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- starts_on -->
-        <test-method is-config="true" signature="ends_on()[pri:0, instance:HomeLoan.Loans@59402b8f]" started-at="2025-03-14T21:44:13 IST" name="ends_on" finished-at="2025-03-14T21:44:13 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="ends_on()[pri:0, instance:HomeLoan.Loans@6b695b06]" started-at="2025-03-16T17:08:51 IST" name="ends_on" finished-at="2025-03-16T17:08:51 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ends_on -->
-        <test-method is-config="true" signature="closure()[pri:0, instance:HomeLoan.Loans@59402b8f]" started-at="2025-03-14T21:44:13 IST" name="closure" finished-at="2025-03-14T21:44:19 IST" duration-ms="5434" status="PASS">
+        <test-method is-config="true" signature="closure()[pri:0, instance:HomeLoan.Loans@6b695b06]" started-at="2025-03-16T17:08:51 IST" name="closure" finished-at="2025-03-16T17:08:56 IST" duration-ms="5406" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closure -->

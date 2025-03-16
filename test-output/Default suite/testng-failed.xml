@@ -3,18 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="HomeLoan.Loans">
+      <class name="HomeLoan.PersonalLoan">
         <methods>
-          <include name="dashBoard"/>
-          <include name="closure"/>
-          <include name="starts_on"/>
-          <include name="AmountFixer"/>
-          <include name="windows_handle"/>
-          <include name="launcher"/>
-          <include name="ends_on"/>
-          <include name="Details"/>
+          <include name="ClickAction"/>
+          <include name="laucher"/>
         </methods>
-      </class> <!-- HomeLoan.Loans -->
+      </class> <!-- HomeLoan.PersonalLoan -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -2,19 +2,20 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
-    <parameter name="dhamu" value="https://www.axisbank.com/"/>
     <groups>
       <run>
         <include name="sanity"/>
         <include name="smoke"/>
+        <include name="regression"/>
       </run>
     </groups>
     <classes>
       <class name="HomeLoan.Loans">
         <methods>
-          <include name="dashBoard"/>
-          <include name="AmountFixer" invocation-numbers="0 1"/>
-          <include name="windows_handle"/>
+          <include name="closure"/>
+          <include name="starts_on"/>
+          <include name="launcher"/>
+          <include name="ends_on"/>
           <include name="Details" invocation-numbers="0"/>
         </methods>
       </class> <!-- HomeLoan.Loans -->

@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\Dhamodharan\eclipse-workspace\AxisBank.org\testng.xml</span>
+                    <span>C:\Users\Dhamodharan\eclipse-workspace\AxisBank.TestNg\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -60,7 +60,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-Suite" class="navigator-link ">
-                    <span>2 groups</span>
+                    <span>3 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">6 methods,   6 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -109,6 +109,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="HomeLoan.Loans" class="method navigator-link" hash-for-method="AmountFixer(5000000)">AmountFixer(5000000)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="HomeLoan.PersonalLoan" class="method navigator-link" hash-for-method="ClickAction">ClickAction</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -184,18 +189,35 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">HomeLoan.PersonalLoan</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ClickAction">
+                  </a> <!-- ClickAction -->
+                  <span class="method-name">ClickAction</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Dhamodharan\eclipse-workspace\AxisBank.org\testng.xml</span>
+            <span class="header-content">C:\Users\Dhamodharan\eclipse-workspace\AxisBank.TestNg\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;HomeLoan.Transformer&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
-    &lt;parameter name=&quot;dhamu&quot; value=&quot;https://www.axisbank.com/&quot;/&gt;
     &lt;groups&gt;
       &lt;run&gt;
         &lt;include name=&quot;sanity&quot;/&gt;
@@ -205,6 +227,7 @@
     &lt;/groups&gt;
     &lt;classes&gt;
       &lt;class name=&quot;HomeLoan.Loans&quot;/&gt;
+      &lt;class name=&quot;HomeLoan.PersonalLoan&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -218,7 +241,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (1 class)</span>
+                <span class="test-name">Test (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -252,6 +275,14 @@
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">ClickAction</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Suite" class="panel">
@@ -268,32 +299,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'AmountFixer')
 data.setCell(0, 2, 'HomeLoan.Loans')
-data.setCell(0, 3, 5640);
+data.setCell(0, 3, 5554);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'dashBoard')
 data.setCell(1, 2, 'HomeLoan.Loans')
-data.setCell(1, 3, 1079);
+data.setCell(1, 3, 1907);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'AmountFixer')
-data.setCell(2, 2, 'HomeLoan.Loans')
-data.setCell(2, 3, 889);
+data.setCell(2, 1, 'ClickAction')
+data.setCell(2, 2, 'HomeLoan.PersonalLoan')
+data.setCell(2, 3, 1526);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'Details')
+data.setCell(3, 1, 'windows_handle')
 data.setCell(3, 2, 'HomeLoan.Loans')
-data.setCell(3, 3, 830);
+data.setCell(3, 3, 1198);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'windows_handle')
+data.setCell(4, 1, 'AmountFixer')
 data.setCell(4, 2, 'HomeLoan.Loans')
-data.setCell(4, 3, 398);
+data.setCell(4, 3, 817);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'Details')
+data.setCell(5, 2, 'HomeLoan.Loans')
+data.setCell(5, 3, 783);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 8 seconds</span>
+              <span class="suite-total-time">Total running time: 11 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -321,72 +356,95 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">HomeLoan.Loans</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">launcher(https://www.axisbank.com/)</span>
+                <span class="method-name">launcher</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">starts_on</span>
-                <span class="method-start">5903 ms</span>
+                <span class="method-start">6922 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">dashBoard</span>
-                <span class="method-start">5905 ms</span>
+                <span class="method-start">6928 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">ends_on</span>
-                <span class="method-start">6988 ms</span>
+                <span class="method-start">8838 ms</span>
               </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">starts_on</span>
-                <span class="method-start">6998 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">AmountFixer(2000000)</span>
-                <span class="method-start">6999 ms</span>
+                <span class="method-start">8853 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">ends_on</span>
-                <span class="method-start">7890 ms</span>
-              </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">starts_on</span>
-                <span class="method-start">7892 ms</span>
+                <span class="method-start">8853 ms</span>
               </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">ends_on</span>
+                <span class="method-start">9673 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">AmountFixer(5000000)</span>
-                <span class="method-start">7893 ms</span>
+                <span class="method-start">9675 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">starts_on</span>
+                <span class="method-start">9675 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="configuration-method after">
                 <span class="method-name">ends_on</span>
-                <span class="method-start">13537 ms</span>
+                <span class="method-start">15231 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">starts_on</span>
-                <span class="method-start">13543 ms</span>
+                <span class="method-start">15241 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">windows_handle</span>
-                <span class="method-start">13544 ms</span>
+                <span class="method-start">15241 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">ends_on</span>
-                <span class="method-start">13947 ms</span>
+                <span class="method-start">16439 ms</span>
               </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">starts_on</span>
-                <span class="method-start">13952 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">Details(9787857768, Dhamodharan)</span>
-                <span class="method-start">13952 ms</span>
+                <span class="method-start">16447 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">starts_on</span>
+                <span class="method-start">16447 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="configuration-method after">
                 <span class="method-name">ends_on</span>
-                <span class="method-start">14787 ms</span>
+                <span class="method-start">17230 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">closure</span>
-                <span class="method-start">14792 ms</span>
+                <span class="method-start">17238 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">HomeLoan.PersonalLoan</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">laucher</span>
+                <span class="method-start">22644 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">Starts_on</span>
+                <span class="method-start">28137 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ClickAction</span>
+                <span class="method-start">28139 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Ends_on</span>
+                <span class="method-start">29665 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">closure</span>
+                <span class="method-start">29665 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
